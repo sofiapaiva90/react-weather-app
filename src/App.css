@@ -1,0 +1,11 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+}
+
+.App .container {
+  max-width: 800px;
+}
+
+.App .degrees {
+  display: inline;
+}
