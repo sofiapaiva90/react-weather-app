@@ -2,10 +2,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.App .container {
-  max-width: 800px;
+
+.App p {
+  text-align: center;
 }
 
-.App .degrees {
-  display: inline;
-}
