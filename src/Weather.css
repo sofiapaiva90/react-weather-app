@@ -19,9 +19,9 @@ max-width: 700px;
 .Weather i {
     padding-right: 15px;
 }
-.Weather img {
-    width: 100px;
+.Weather canvas {
     padding-right: 10px;
+    vertical-align: middle;
 }
 
 .Weather .degrees {
@@ -74,9 +74,7 @@ max-width: 700px;
     text-align: center;
     font-size: 16px;
 }
-.Weather img {
-    width: 75px;
-}
+
 .Weather .row {
   padding-top: 20px;
 }
