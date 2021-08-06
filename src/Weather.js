@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 
 import "./Weather.css";
 
@@ -50,7 +51,12 @@ export default function Weather(props) {
         let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
         axios.get(apiURL).then(handleResponse);
 
-        return "Loading...";
+        return (
+            <Loader type="ThreeDots"
+                color="black"
+                height={80}
+                width={80} />
+        );
     }
 
 }
