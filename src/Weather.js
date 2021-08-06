@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 
@@ -14,7 +15,7 @@ export default function Weather(props) {
             wind: response.data.wind.speed,
             humidity: response.data.main.humidity,
             iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-            date: "Sunday, July 11th 2021, 17h51",
+            date: new Date(response.data.dt * 1000),
 
         });
     }
@@ -22,7 +23,7 @@ export default function Weather(props) {
         return (
             <div className="Weather">
                 <h1> <i className="fa fa-thumb-tack" aria-hidden="true"></i>{weatherData.city} </h1>
-                <h4>{weatherData.date}</h4>
+                <h4><FormattedDate date={weatherData.date} /></h4>
                 <div className="row">
                     <div className="col-8">
                         <img src={weatherData.iconUrl} alt="weather icon" />
