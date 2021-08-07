@@ -40,7 +40,7 @@ max-width: 700px;
  }
 
 .Weather .row {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .Weather button {
@@ -69,6 +69,7 @@ max-width: 700px;
 
 .WeatherDegrees a:hover {
     color:#3d84a8;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 575px) {
@@ -86,7 +87,10 @@ max-width: 700px;
 }
 
 .Weather .row {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+.Weather .col-8 {
+    text-align: center;
 }
 .Weather .degrees {
   font-size: 40px;

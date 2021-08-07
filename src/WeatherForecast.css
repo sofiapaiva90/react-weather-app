@@ -1,0 +1,40 @@
+.WeatherForecast h5 {
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bolder;
+    color: #3d84a8;
+}
+
+.WeatherForecast i {
+    color: black;
+}
+
+.WeatherForecast .row {
+    text-align: center;
+    align-items: center;
+}
+
+.WeatherForecast .WeekDay {
+    color:#3d84a8;
+    font-weight: bold;
+}
+
+.WeatherForecast .TempMin {
+    color: gray;
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+    .WeatherForecast h5 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.WeatherForecast .col-sm-3 {
+    padding-top: 5px;
+}
+}
+
