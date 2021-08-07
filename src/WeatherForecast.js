@@ -29,6 +29,9 @@ export default function WeatherForecast(props) {
                                 <hr />
                             </div>
                         );
+                    } else {
+                        return null;
+
                     }
                 })}
             </div>
