@@ -1,6 +1,6 @@
 .Weather {
 max-width: 700px;
-  margin: 40px auto;
+  margin: 40px auto 20px auto;
   padding:30px;
   border: 1px solid #000000;
   border-radius: 4px;
@@ -29,6 +29,7 @@ max-width: 700px;
   font-size: 60px;
   color: #3d84a8;
   vertical-align: middle;
+  padding-right: 10px;
   
 }
 .Weather .TempDetails {
@@ -59,6 +60,15 @@ max-width: 700px;
     font-size: 18px;
     position: relative;
     top:-15px;
+}
+
+.WeatherDegrees a {
+    text-decoration:none;
+     color:#3d84a8;
+}
+
+.WeatherDegrees a:hover {
+    color:#3d84a8;
 }
 
 @media screen and (max-width: 575px) {
