@@ -5,7 +5,15 @@
 
 .App p {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.App a {
+  color:#0ca7f5;
+}
+
+.App a:hover {
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 575px) {
