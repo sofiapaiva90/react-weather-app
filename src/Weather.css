@@ -88,6 +88,7 @@ max-width: 700px;
 
 .Weather .row {
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 .Weather .col-8 {
     text-align: center;
